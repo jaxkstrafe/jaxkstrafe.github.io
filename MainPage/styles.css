@@ -5,6 +5,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+body{
+    background-color: #141414;
+    background-image: url(darkbg.jpg);
+}
+
 .navbar {
     background: black;
     height: 80px;
@@ -102,12 +107,6 @@
     text-decoration: underline;
 }
 
-
-
-.main {
-    background-color: #141414;
-}
-
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -115,7 +114,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 70vh;
-    background-color: #141414;
+    
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -369,9 +368,6 @@
 
 /*Skills Sections*/
 
-.skills {
-    background-color: #141414;
-}
 
 .skills__container {
     display: grid;
@@ -380,7 +376,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 70vh;
-    background-color: #141414;
+    
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -520,7 +516,6 @@
 /*Footer Section*/
 
 .footer__container{
-    background-color: #141414;
     padding: 1rem 0;
     display: flex;
     flex-direction: column;
