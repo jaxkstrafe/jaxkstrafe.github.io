@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar__container"><a href="" id="navbar__logo"><img src="jackskull.png" width="50px" height="50px">JXCKSTRAFE</a>
+        <div class="navbar__container"><a href="" id="navbar__logo">JXCKSTRAFE.XYZ</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -18,49 +18,48 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/MainPage/AboutMe.html" class="navbar__links">Home</a>
+                    <a href="/" class="navbar__links">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/Workout/Workout.html" class="navbar__links">Workouts</a>
+                    <a href="/MainPage/AboutMe.html" class="navbar__links">About Me</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/Finance/Finance.html" class="navbar__links">Finance</a>
+                    <a href="/Finance/Finance.html" class="navbar__links"></a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>Workout Schedule</h1>
-                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSbc8NP520UkdWUPkdrHYg99ezDnj-yBnnr9iTzj-_j60YREHDlKFD0dzhq9c1PDJDpxr0yWq0TC-bn/pubhtml?widget=true&amp;headers=false"
-                width="550" height="400">  
-                </iframe>
-                <h1></h1> 
-                <button class="main__btn"><a href="/">Back To Home</a></button>
+        <h1 class="Title">Did I Workout Today?</h1>
+        <div class="calendar">
+            <div class="header">
+              <button id="prevBtn">&lt;</button>
+              <h2 id="monthYear"></h2>
+              <button id="nextBtn">&gt;</button>
             </div>
-            <div class="main__img--container">
-                <img src="Working.svg" alt="mainpic" id="main__img">
+            <div class="days"></div>
+          </div>        
+    </div>
+
+
+
+    <!--FOOTER SECTION-->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Where to contact me</h2>
+                    <center>
+                    <a href="mailto:daljac133@gmail.com">Email</a>
+                    <a href="https://twitter.com/jxckstrafe">Twitter</a>
+                    <a href="https://github.com/jaxkstrafe">Github</a>
+                    </center>
+                </div>
             </div>
         </div>
     </div>
-<!--FOOTER SECTION-->
-<div class="footer__container">
-    <div class="footer__links">
-        <div class="footer__link--wrapper">
-            <div class="footer__link--items">
-                <h2>Where to contact me</h2>
-                <center>
-                <a href="mailto:daljac133@gmail.com">Email</a>
-                <a href="https://twitter.com/jxckstrafe">Twitter</a>
-                <a href="https://github.com/jaxkstrafe">Github</a>
-                </center>
-            </div>
-        </div>
-    </div>
-</div>
-<script src="app.js"></script> 
+<script src="script.js"></script> 
     
  
 </body>
