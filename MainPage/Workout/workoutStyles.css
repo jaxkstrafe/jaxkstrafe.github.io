@@ -1,5 +1,8 @@
 *{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .navbar {
@@ -40,10 +43,6 @@
     font-size: 4rem;
   }
 
-.fa-gem{
-    display: flex;
-}
-
 .navbar__menu{
     display: flex;
     align-items: center;
@@ -65,117 +64,11 @@
     height: 100%;
 }
 
-.navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100%;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background-color: rgb(212, 104, 2);
-    color: rgb(214, 100, 24);
-}
-
-.button:hover{
-    background-color: rgb(211, 89, 19);
-    transition: all 0.3s ease;
-}
-
 .navbar__links:hover {
-    color: crimson;
-    transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 960px){
-    .navbar__container{
-        display: flex;
-        justify-content: center;
-        height: 80px;
-        z-index: 100%;
-        width: 100%;
-        max-width: 100%;
-        padding: 0%;
-    }
-    .navbar__menu{
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: -1000px;
-        opacity: 0;
-        transform: all 0.5s ease;
-        height: 50vh;
-        z-index: -1;
-        background: black;
-    }
-    .navbar__menu.active{
-        background: black;
-        top: 100%;  
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 99;
-        height: 50vh;
-        font-size: 1.6rem;
-    }
-
-    #navbar__logo {
-        padding-left: 25px;
-    }
-
-    .navbar__toggle .bar{
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease;
-        background: white;
-
-    }
-
-    .navbar__item{
-        width: 100%;
-    }
-
-    .navbar__links {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-
-    #mobile-menu {
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
-    }
-
-    .navbar__btn {
-        padding-bottom: 2rem;
-    }
-
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-    }
-
-
+    color: rgb(122, 18, 207);
+    transition: all 0.9s ease;
+    text-decoration: underline;
+    font-size: xx-large;
 }
 
 /* END HEADER */
@@ -183,64 +76,192 @@
 
 /* BEGIN BODY */
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #141414;
-        background-image: url(darkbg.jpg);
-    }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    background-image: url(darkbg.jpg);
+}
   
-
-  .main h1 {
+.main {
+    padding-top: 25px;
+}
+    
+.main h1 {
     text-align: center;
     text-decoration: solid;
     color: #fff;
-  }
-  .calendar {
-    max-width: 700px;
+}
+
+.calendar {
+    max-width: 900px;
     margin: 30px auto;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-  }
+}
   
-  .header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
     color: #fff;
-  }
-    #prevBtn,
-    #nextBtn {
-        font-size: 24px;
-        padding: 12px 18px;
-        border: none;
-        background-color: #f0f0f0;
-        border-radius: 6px;
-        cursor: pointer;
-    }
-        
-  .days {
+}
+
+#prevBtn,
+#nextBtn {
+    font-size: 24px;
+    padding: 12px 18px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+            
+.days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
     color: #fff;
-  }
-  
-  .day {
-    padding: 25px;
+}
+    
+.day {
+    padding: 45px;
     text-align: center;
-    border: 1px solid #eee;
+    border: 1px solid #eee;        
     cursor: pointer;
     font-size: 18px;
-  }
-  
-  .day:hover {
+}
+    
+.day:hover {
     background-color: grey;
-  }
-  
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+    
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
 /* END BODY */
 
+/*Animations*/
+
+.fadeInLeft {
+    -webkit-animation: fadeInLeft 1.2s both;
+    -moz-animation: fadeInLeft 1.2s both;
+    -o-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -moz-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -moz-transform: translateX(0);
+    }
+}
+@-o-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -o-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -o-transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInTop {
+    -webkit-animation: fadeInTop 1.2s both;
+    -moz-animation: fadeInTop 1.2s both;
+    -o-animation: fadeInTop 1.2s both;
+    animation: fadeInTop 1.2s both; 
+}
+
+@keyframes fadeInTop {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+.fadeInRight {
+    -webkit-animation: fadeInRight 1.2s both;
+    -moz-animation: fadeInRight 1.2s both;
+    -o-animation: fadeInRight 1.2s both;
+    animation: fadeInRight 1.2s both; 
+}
+
+@keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+/*End Animations*/
 
 .footer__container{
     padding: 1rem 0;

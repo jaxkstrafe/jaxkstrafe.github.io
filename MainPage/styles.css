@@ -48,10 +48,6 @@ body{
     font-size: 3rem;
   }
 
-.fa-gem{
-    display: flex;
-}
-
 .navbar__menu{
     display: flex;
     align-items: center;
@@ -73,18 +69,11 @@ body{
     height: 100%;
 }
 
-.navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100%;
-}
-
 .navbar__links:hover {
     color: rgb(122, 18, 207);
     transition: all 0.9s ease;
     text-decoration: underline;
+    font-size: xx-large;
 }
 
 .main__container {
