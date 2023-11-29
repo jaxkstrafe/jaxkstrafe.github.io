@@ -76,6 +76,9 @@ body{
     font-size: xx-large;
 }
 
+
+/* Start Main */
+
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -224,6 +227,8 @@ body{
     -moz-text-fill-color: transparent;
     text-align: center;
 }
+
+/* End Main */
 
 /*Animations*/
 
