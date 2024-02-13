@@ -94,7 +94,7 @@ function openModal(event) {
   const selectedDay = event.target.getAttribute('data-day');
   if (selectedDay) {
     modal.style.display = 'block';
-    currentDate.setDate(selectedDay); // Set the selected day for the modal
+    currentDate.setDate(selectedDay); 
   }
 }
 
@@ -114,7 +114,7 @@ function saveEvent() {
   };
 
   events.push(newEvent);
-  renderCalendar(); // Update the calendar to display the new event
+  renderCalendar(); 
 
   closeModal();
 }
