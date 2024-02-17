@@ -6,8 +6,8 @@
 }
 
 body{
-    background-color: #141414;
     background-image: url(darkbg.jpg);
+    background-color: #141414;
 }
 
 .navbar {
@@ -154,10 +154,6 @@ body{
     }
 }
 
-.main {
-    background-color: #141414;
-}
-
 .main_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -165,7 +161,6 @@ body{
     justify-self: center;
     margin: 0 auto;
     height: 95vh;
-    background-color: #141414;
     z-index: 1;
     width: 100%;
     max-width: 1400px;
@@ -304,7 +299,6 @@ body{
 
 
 .footer_container{
-    background-color: #141414;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
