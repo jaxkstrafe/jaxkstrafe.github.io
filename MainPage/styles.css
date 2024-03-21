@@ -123,7 +123,7 @@ body{
     font-weight: 600;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199, 100%);
     padding: 14px 32px;
-    border: none;
+    border: 5px;
     border-radius: 4px;
     color: rgb(255, 255, 255);
     margin-top: 2rem;
@@ -134,11 +134,11 @@ body{
 
     animation-name: bounce;
     animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 1s;
-    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
     animation-direction: normal;
     animation-fill-mode: both;
+    animation-iteration-count: 2;
     transform: translateX(-300px);
 }
 
@@ -321,10 +321,10 @@ body{
 }
 
 .fadeInRight {
-    -webkit-animation: fadeInRight 1.2s both;
-    -moz-animation: fadeInRight 1.2s both;
-    -o-animation: fadeInRight 1.2s both;
-    animation: fadeInRight 1.2s both; 
+    -webkit-animation: fadeInRight 5.2s both;
+    -moz-animation: fadeInRight 5.2s both;
+    -o-animation: fadeInRight 5.2s both;
+    animation: fadeInRight 5.2s both; 
 }
 
 @keyframes fadeInRight {
@@ -336,6 +336,22 @@ body{
         opacity: 1;
         -webkit-transform: translateX(0);
     }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0.20;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.fadeIn {
+    opacity: 0;
+    -webkit-animation: fadeIn 2.5s both;
+    -moz-animation: fadeIn 2.5s both;
+    -o-animation: fadeIn 2.5s both;
+    animation: fadeIn 2.5s both; 
 }
 
 /*End Animations*/
@@ -545,5 +561,13 @@ body{
     color: #6845a8;
     transition: 0.3s ease-out;
 }
+
+.animated {
+    opacity: 0;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+
 
 
