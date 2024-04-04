@@ -5,19 +5,46 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+/*Font stuff*/
+@font-face {
+    font-family: 'MonumentExtended-Regular' ;
+    src: url(fonts/MonumentExtended-Regular.otf) format('OpenType');
+}
+
+@font-face {
+    font-family: 'degarism-studio-alliance-no.1';
+    src: url(/fonts/Degarism\ Studio\ -\ Alliance\ No.1\ Light.otf) format('OpenType');
+}
+
+h1 {
+    font-family: 'degarism-studio-alliance-no.1';
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'degarism-studio-alliance-no.1';
+    font-weight: normal;
+}
+
+p {
+    font-family: 'degarism-studio-alliance-no.1';
+    font-weight: normal;
+}
+
+/*End Font Stuff*/
+
 body{
     background-color: #141414;
-    background-image: url(darkbg.jpg);
 }
 
 .navbar {
-    background: black;
+    background-blend-mode: lighten;
+    border-bottom: 1px;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    position: sticky;
     top: 0;
     z-index: 999;
 }
@@ -85,7 +112,7 @@ body{
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 70vh;
+    height: 75vh;
     
     z-index: 1;
     width: 100%;
@@ -189,8 +216,9 @@ body{
     background-color: #05014a;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     margin-top: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 600; 
+    word-spacing: 5px;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -365,7 +393,7 @@ body{
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 70vh;
+    height: 75vh;
     
     z-index: 1;
     width: 100%;
