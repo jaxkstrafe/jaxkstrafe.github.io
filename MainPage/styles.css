@@ -210,7 +210,7 @@ body{
     width: 100%
 }
 
-.main_img--container{
+.main_img_container{
     text-align: center;
 }
 
@@ -238,25 +238,9 @@ body{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-
 }
 
-.main_content li {
-    background-color: #05014a;
-    background-image: linear-gradient(to top, #fff 0%, #fff 100%);
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: 700; 
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    color: white;
-    text-align: center;
-}
-
-.main_content ul {
+.main_content ul, li {
     background-color: #05014a;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     margin-top: 1rem;
@@ -273,6 +257,12 @@ body{
 /* End Main */
 
 /*Animations*/
+
+.animated {
+    opacity: 0;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
 
 @keyframes bounce {
     0% {
@@ -398,6 +388,8 @@ body{
 
 /*End Animations*/
 
+
+
 /*Skills Sections*/
 
 
@@ -463,22 +455,7 @@ body{
 
 }
 
-.skills_content li {
-    background-color: #05014a;
-    background-image: linear-gradient(to top, #fff 0%, #fff 100%);
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: 700; 
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    color: white;
-    text-align: left;
-}
-
-.skills_content ul {
+.skills_content ul, li {
     background-color: #05014a;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     margin-top: 1rem;
@@ -493,6 +470,8 @@ body{
 }
 
 /*End skills section*/
+
+
 
 /*Footer Section*/
 
@@ -520,11 +499,11 @@ body{
     justify-content: center;
 }
 
-.footer_links--wrapper {
+.footer_links_wrapper {
     display: flex;
 }
 
-.footer_links--items{
+.footer_links_items{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -534,29 +513,23 @@ body{
     box-sizing: border-box;
 }
 
-.footer_link--items h2 {
+.footer_link_items h2 {
     margin-bottom: 15px;
 }
 
-.footer_link--items > h2 {
+.footer_link_items > h2 {
     color: white;
 }
 
-.footer_link--items a {
+.footer_link_items a {
     color: #ffffff;
     text-decoration: none;
     margin-bottom: 0.9rem;
 }
 
-.footer_links--items a:hover {
+.footer_links_items a:hover {
     color: #6845a8;
     transition: 0.3s ease-out;
-}
-
-.animated {
-    opacity: 0;
-    animation-duration: 4s;
-    animation-fill-mode: both;
 }
 
 
