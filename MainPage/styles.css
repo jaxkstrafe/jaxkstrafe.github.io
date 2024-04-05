@@ -12,22 +12,32 @@
 }
 
 @font-face {
-    font-family: 'degarism-studio-alliance-no.1';
-    src: url(/fonts/Degarism\ Studio\ -\ Alliance\ No.1\ Light.otf) format('OpenType');
+    font-family: 'degarism-studio-alliance-no.2';
+    src: url(/jaxkstrafe.github.io/fonts/Degarism\ Studio\ -\ Alliance\ No.2\ Light.otf) format('OpenType');
 }
 
 h1 {
-    font-family: 'degarism-studio-alliance-no.1';
+    font-family: 'degarism-studio-alliance-no.2';
     font-weight: normal;
 }
 
+h1 u {
+    font-family: 'degarism-studio-alliance-no.2';
+    font-weight: normal; 
+}
+
 h2 {
-    font-family: 'degarism-studio-alliance-no.1';
+    font-family: 'degarism-studio-alliance-no.2';
     font-weight: normal;
 }
 
 p {
-    font-family: 'degarism-studio-alliance-no.1';
+    font-family: 'degarism-studio-alliance-no.2';
+    font-weight: normal;
+}
+
+a {
+    font-family: 'degarism-studio-alliance-no.2';
     font-weight: normal;
 }
 
@@ -36,6 +46,7 @@ p {
 body{
     background-color: #141414;
 }
+
 
 .navbar {
     background-blend-mode: lighten;
@@ -59,6 +70,8 @@ body{
     margin: 0 auto;
     padding: 0 50px;
 }
+
+
 
 #navbar_logo {
     background-color: #000000;
@@ -123,7 +136,7 @@ body{
 .main_content h1 {
     font-size: 3rem;
     background-color: whitesmoke;
-    background-image: linear-gradient(to top, #e9e9e9 0%, #74757c 100%);
+    background-image: linear-gradient(to top, #ffffff 0%, #74757c 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -136,7 +149,7 @@ body{
 .main_content h2 {
     font-size: 2rem;
     background-color: rgb(90, 47, 47);
-    background-image: linear-gradient(to top, #e9e9e9 0%, #74757c 100%);
+    background-image: linear-gradient(to top, #ffffff 0%, #74757c 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -148,7 +161,6 @@ body{
 .main_btn {
     font-size: 1.2rem;
     font-weight: 600;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199, 100%);
     padding: 14px 32px;
     border: 5px;
     border-radius: 4px;
@@ -158,15 +170,17 @@ body{
     position: relative;
     transition: all 0.35s;
     outline: none;
+    transform: translateX(-300px);
+}
 
+.animate {
     animation-name: bounce;
     animation-duration: 1s;
+    animation-iteration-count: 3;
     animation-timing-function: ease-in-out;
-    animation-delay: 3s;
     animation-direction: normal;
-    animation-fill-mode: both;
-    animation-iteration-count: 2;
-    transform: translateX(-300px);
+    animation-fill-mode: forwards;
+    transform: translateX(0);
 }
 
 .main_btn a {
@@ -404,7 +418,7 @@ body{
 .skills_content h1 {
     font-size: 3rem;
     background-color: whitesmoke;
-    background-image: linear-gradient(to top, #e9e9e9 0%, #74757c 100%);
+    background-image: linear-gradient(to top, #ffffff 0%, #74757c 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -418,63 +432,12 @@ body{
 .skills_content h2 {
     font-size: 2rem;
     background-color: rgb(90, 47, 47);
-    background-image: linear-gradient(to top, #e9e9e9 0%, #74757c 100%);
+    background-image: linear-gradient(to top, #ffffff 0%, #74757c 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-}
-
-
-.skills_btn {
-    font-size: 1rem;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199, 100%);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: rgb(255, 255, 255);
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
-
-    animation-name: bounce;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 1s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: both;
-    transform: translateX(-300px);
-}
-
-.skills_btn a {
-    position: relative;
-    z-index: 2;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-.skills_btn::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: rgb(122, 18, 207);
-    transition: all 0.35s;
-    border-radius: 4px;
-}
-
-.skills_btn:hover {
-    color: #fff;
-}
-
-.main_btn:hover::after{
-    width: 100%
 }
 
 
