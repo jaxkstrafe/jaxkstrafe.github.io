@@ -225,7 +225,7 @@ body{
     width: 100%
 }
 
-.main_img--container{
+.main_img_container{
     text-align: center;
 }
 
@@ -253,25 +253,9 @@ body{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-
 }
 
-.main_content li {
-    background-color: #05014a;
-    background-image: linear-gradient(to top, #fff 0%, #fff 100%);
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: 700; 
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    color: white;
-    text-align: center;
-}
-
-.main_content ul {
+.main_content ul, li {
     background-color: #05014a;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     margin-top: 1rem;
@@ -297,6 +281,7 @@ body{
 .animated {
     opacity: 0;
     animation-duration: 4s;
+<<<<<<< HEAD
     animation-delay: 6s;
     animation-fill-mode: both;
 }
@@ -338,6 +323,11 @@ body{
     }
 }
 
+=======
+    animation-fill-mode: both;
+}
+
+>>>>>>> b555b6a2f99547e558831ed94f6cf05c2814fe02
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -462,6 +452,12 @@ body{
 
 /*End Animations*/
 
+<<<<<<< HEAD
+=======
+
+
+/*Skills Sections*/
+>>>>>>> b555b6a2f99547e558831ed94f6cf05c2814fe02
 
 
 
@@ -530,22 +526,7 @@ body{
 
 }
 
-.skills_content li {
-    background-color: #05014a;
-    background-image: linear-gradient(to top, #fff 0%, #fff 100%);
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: 700; 
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    color: white;
-    text-align: left;
-}
-
-.skills_content ul {
+.skills_content ul, li {
     background-color: #05014a;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     margin-top: 1rem;
@@ -563,6 +544,7 @@ body{
 
 
 
+<<<<<<< HEAD
 
 /* Projects Section */
 
@@ -669,6 +651,8 @@ body{
 
 
 
+=======
+>>>>>>> b555b6a2f99547e558831ed94f6cf05c2814fe02
 /*Footer Section*/
 
 .footer_container{
@@ -695,11 +679,11 @@ body{
     justify-content: center;
 }
 
-.footer_links--wrapper {
+.footer_links_wrapper {
     display: flex;
 }
 
-.footer_links--items{
+.footer_links_items{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -709,27 +693,30 @@ body{
     box-sizing: border-box;
 }
 
-.footer_link--items h2 {
+.footer_link_items h2 {
     margin-bottom: 15px;
 }
 
-.footer_link--items > h2 {
+.footer_link_items > h2 {
     color: white;
 }
 
-.footer_link--items a {
+.footer_link_items a {
     color: #ffffff;
     text-decoration: none;
     margin-bottom: 0.9rem;
 }
 
-.footer_links--items a:hover {
+.footer_links_items a:hover {
     color: #6845a8;
     transition: 0.3s ease-out;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> b555b6a2f99547e558831ed94f6cf05c2814fe02
 
 
 
