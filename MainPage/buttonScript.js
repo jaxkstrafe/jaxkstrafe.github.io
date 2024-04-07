@@ -2,13 +2,13 @@
 
 const button = document.querySelector(".main_btn");
 
-const observer = new IntersectionObserver((entries) => {
+const btnObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       button.classList.add("animate");
-      observer.disconnect();
+      btnObserver.disconnect();
     }
   });
 });
 
-observer.observe(button);
+btnObserver.observe(button);

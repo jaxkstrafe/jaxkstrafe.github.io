@@ -5,13 +5,14 @@
     <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/jaxkstrafe.github.io/favicon/favicon-32x32.png">
+    <script defer src = "/jaxkstrafe.github.io/MainPage/app.js"></script>
 </head>
 
 <body>
 
 <!--HEADER SECTION-->
 <nav class="navbar">
-    <div class="navbar_container"><a href="/" id="navbar_logo">jxckstrafe.xyz</a>
+    <div class="navbar_container"><a href="/" id="navbar_logo">Jack Dalton</a>
         <ul class="navbar_menu">  
             <li class="navbar_item">
                 <a href="/" class="navbar_links">Home</a>
@@ -19,76 +20,83 @@
             <li class="navbar_item">
                 <a href="Workout/Workout.html" class="navbar_links">Workout Calender</a>
             </li>
-            <li class="navbar_item">
-                <a href="Projects/Projects.html" class="navbar_links">Projects</a>
-            </li>
         </ul>
     </div>
 </nav>
 
-<div class="main">
-    <div class="main_container">
-        <div class="main_content" id="aboutMe">
-            <div class="animated fadeInLeft">
-                <h2>Welcome to my Personal Website</h1>
-                <h1>Enjoy your stay!</h1>
-            </div>
-        </div>
-        <div class="main_img--container" id="aboutMeImg">
-            <div class="animated fadeInLeft">
-                <img src="website.svg" alt="mainpic" id="main_img">
-            </div>
-        </div>
-    </div>
-</div>
-
 <!--MAIN SECTION-->
-<div class="main">
-    <div class="main_container">
-        
-        <div class="main_content" id="aboutMe">
-            <div class="animated fadeInLeft">
-                <h1><u>About Me</u></h1>
-                <p>Hi, my name is Jack Dalton, and I am a SR currently pursing a computer science degree
-                    from Stephen F Austin</p>
-                <p>My educational journey has been focused on gaining a solid foundation in various 
-                    aspects of computer science. I'm currently enrolled in courses that cover 
-                    programming languages, algorithms, data structures, and software engineering</p>
-                <button class="main_btn">
-                    <a href="https://github.com/jaxkstrafe" target="_blank">CHECK OUT MY GITHUB</a>
-                </button>
+<section>
+    <div class="main">
+        <div class="main_container">
+            <div class="main_content" id="aboutMe">
+                <div class = "logo hidden">
+                    <h1><u>About Me</u></h1>
+                </div>
+                <div class = "logo hidden">
+                    <p>Hi, my name is Jack Dalton, and I am a SR currently pursing a computer science degree
+                        from Stephen F Austin</p>
+                </div>
+                <div class = "logo hidden">
+                    <p>My educational journey has been focused on gaining a solid foundation in various 
+                        aspects of computer science. I'm currently enrolled in courses that cover 
+                        programming languages, algorithms, data structures, and software engineering</p>
+                </div>
+                <div class = "logo hidden">
+                    <button class="main_btn">
+                        <a href="https://github.com/jaxkstrafe" target="_blank">CHECK OUT MY GITHUB</a>
+                    </button>
+                </div>
                 <script src="buttonScript.js"></script>
-
             </div>
-        </div>
-        <div class="main_img--container" id="aboutMeImg">
-            <div class="animated fadeInLeft">
-                <img src="progamming.svg" alt="mainpic" id="main_img">
+            <div>
+                <div class = "logo hidden">
+                    <div class="main_img--container" id="aboutMeImg">
+                        <img src="progamming.svg" alt="mainpic" id="main_img">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!--SKILLS SECTION-->
-<div class="skills" id="skills">
-    <div class="skills_container">
-        <div class="skills_content">
-            <div class="animated fadeInRight">
-                <h1><u>Skills</u></h1>
-                <ul>
-                    <p>Knowledgeable and Proficient in Java, C#, C++, SQL and PlantUML</p>
-                    <p>Knowledgeable and Proficient in Web Design(HTML, CSS, JavaScript)</p>
-                    <p>Proficient in Vim, Ubuntu, VSCode, Visual Studio and Andriod Studio</p>
-                </ul>
+<section>
+    <div class="skills" id="skills">
+        <div class="skills_container">
+            <div class="skills_content">
+                <div class = "logo hidden">
+                    <h1><u>Skills</u></h1>
+                </div>
+                <div class = "logo hidden"> 
+                    <ul>
+                        <p>Knowledgeable and Proficient in Java, C#, C++, SQL and PlantUML</p>
+                        <p>Knowledgeable and Proficient in Web Design(HTML, CSS, JavaScript)</p>
+                        <p>Proficient in Vim, Ubuntu, VSCode, Visual Studio and Andriod Studio</p>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="main_img--container" id="skillsImg">
-            <div class="animated fadeInRight">
-                <img src="Projects/Stocks.svg" alt="mainpic" id="main_img">
+            <div class = "logo hidden">
+                <div class="main_img--container" id="skillsImg">
+                    <div class = "slideImage">
+                        <img src="website.svg" alt="mainpic" id="main_img">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
+<section>
+    <div class = "projects">
+        <div class = "projects_container">
+            <div class = "projects_content">
+                <div class = "logo hidden"> 
+                    <h1><u>Projects</u></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!--FOOTER SECTION-->
 <div class="footer_container">
