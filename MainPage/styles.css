@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: 'degarism-studio-alliance-no.2';
-    src: url(/jaxkstrafe.github.io/fonts/Degarism\ Studio\ -\ Alliance\ No.2\ Light.otf) format('OpenType');
+    src: url(/fonts/Degarism\ Studio\ -\ Alliance\ No.2\ Light.otf) format('OpenType');
 }
 
 h1 {
@@ -622,6 +622,20 @@ body{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+
+.projects_content p {
+    background-color: #05014a;
+    background-image: linear-gradient(to top, #fff 0%, #fff 100%);
+    margin-top: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600; 
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: left;
 }
 
 
