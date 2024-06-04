@@ -1,16 +1,17 @@
-/* Container needed to position the button. Adjust the width as needed */
+body {
+  margin: 0;
+}
+
+
 .container {
     position: relative;
-    width: 80%;
   }
   
-  /* Make the image responsive */
 .container video {
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
   }
-  
-  /* Style the button and place it in the middle of the container/image */
+
+
 .container .btn {
     position: absolute;
     top: 10px;
@@ -25,9 +26,7 @@
   }
 
   @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
-  body {
-    background-color: black;
-  }
+
   
   #intro {
     color: white;
@@ -49,7 +48,7 @@
     padding: 15px 13px;
     min-width: 275px;
     line-height: 2.5em;
-    white-space: no-wrap;
+    white-space: nowrap;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -133,7 +132,7 @@
     }
     100% {
       background-color: rgb(136, 0, 255);
-      blur: 5px;
+      filter: blur(5px);
     }
   }
   @keyframes blink {

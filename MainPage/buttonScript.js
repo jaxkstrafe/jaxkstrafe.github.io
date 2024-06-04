@@ -24,5 +24,17 @@ const btn2Observer = new IntersectionObserver((entries) => {
   });
 });
 
+const button3 = document.querySelector(".project_btn");
+
+const btn3Observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      button3.classList.add("animate");
+      btn3Observer.disconnect();
+    }
+  });
+});
+
 btnObserver.observe(button);
 btn2Observer.observe(button2);
+btn3Observer.observe(button3);

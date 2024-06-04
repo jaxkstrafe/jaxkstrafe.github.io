@@ -2,10 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: "VT323", monospace;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+
+
 /*Font stuff*/
+/*
 @font-face {
     font-family: 'MonumentExtended-Regular' ;
     src: url(fonts/MonumentExtended-Regular.otf) format('OpenType');
@@ -41,7 +46,10 @@ a {
     font-weight: normal;
 }
 
+*/
+
 /*End Font Stuff*/
+
 
 body{
     background-color: #141414;
@@ -159,6 +167,7 @@ body{
     -moz-text-fill-color: transparent;
     text-decoration-line: underline;
     text-align: left;
+    font-weight: 400;
 }
 
 .main_content h2 {
@@ -244,23 +253,24 @@ body{
 .main_content p {
     background-color: #05014a;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
-    margin-top: 2rem;
-    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600; 
-    word-spacing: 5px;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    text-align: left;
+    line-height: 1.5;
 }
 
 .main_content ul, li {
     background-color: #05014a;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: 700; 
+    font-size: 1.3rem;
+    font-weight: 600; 
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -511,15 +521,14 @@ body{
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-align: left;
-
 }
 
 .skills_content ul, li {
     background-color: #05014a;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: 700; 
+    font-size: 1.4rem;
+    font-weight: 600; 
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -684,6 +693,51 @@ body{
     color: white;
     text-align: center;
 }
+
+.project_btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 14px 32px;
+    border: 5px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+    margin-left: 300px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    transform: translateX(-300px);
+}
+
+.project_btn a {
+    position: relative;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.project_btn::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(122, 18, 207);
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.project_btn:hover {
+    color: #fff;
+}
+
+.project_btn:hover::after{
+    width: 100%
+}
+
+
 
 /* End Projects Section */
 
