@@ -1,40 +1,22 @@
-//This script plays the main_btn animation when the button comes into view
+// Common animation class
+const animationClass = 'animate'; // Use a descriptive name
 
-const button = document.querySelector(".main_btn");
+function createAndObserveButton(buttonSelector) {
+  const button = document.querySelector(buttonSelector);
 
-
-const btnObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      button.classList.add("animate");
-      btnObserver.disconnect();
-    }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        button.classList.add(animationClass); 
+        observer.unobserve(button); 
+      }
+    });
   });
-});
 
+  observer.observe(button);
+}
 
-const button2 = document.querySelector(".skills_btn");
-
-const btn2Observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      button2.classList.add("animate");
-      btn2Observer.disconnect();
-    }
-  });
-});
-
-const button3 = document.querySelector(".project_btn");
-
-const btn3Observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      button3.classList.add("animate");
-      btn3Observer.disconnect();
-    }
-  });
-});
-
-btnObserver.observe(button);
-btn2Observer.observe(button2);
-btn3Observer.observe(button3);
+// Create and observe multiple buttons
+createAndObserveButton(".main_btn");
+createAndObserveButton(".skills_btn");
+createAndObserveButton(".project_btn");

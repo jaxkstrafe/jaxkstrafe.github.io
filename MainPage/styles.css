@@ -143,12 +143,16 @@ body{
 /* Start Main */
 
 .main_container {
+    margin-top: 15vh !important;
+    margin-bottom: 15vh !important;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 60vh;
+    border-style: double;
+    border-color: #ffffff;
     
     z-index: 1;
     width: 100%;
@@ -241,6 +245,7 @@ body{
 #main_img {
     height: 8%;
     width: 80%;
+    margin-left: 100px;
 }
 
 .main_content u{
@@ -281,7 +286,28 @@ body{
 
 /* End Main */
 
+.images_container {
+    display: inline;
+}
 
+.images_container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 330px;
+    padding-bottom: 400px;
+}
+
+.images_container li {
+    float: left;
+}
+
+.images_container img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
 
 
 
@@ -463,12 +489,16 @@ body{
 /*Skills Sections*/
 
 .skills_container {
+    margin-top: 20vh !important;
+    margin-bottom: 15vh !important;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 75vh;
+    height: 60vh;
+    border-style: double;
+    border-color: #ffffff;
     
     z-index: 1;
     width: 100%;
@@ -545,7 +575,6 @@ body{
     border-radius: 4px;
     color: rgb(255, 255, 255);
     margin-top: 2rem;
-    margin-left: 300px;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -553,7 +582,7 @@ body{
     transform: translateX(-300px);
 }
 
-.animate {
+.animate_skills {
     animation-name: bounce;
     animation-duration: 1s;
     animation-iteration-count: 3;
@@ -590,18 +619,28 @@ body{
     width: 100%
 }
 
+#skills_img{    
+    height: 8%;
+    width: 80%;
+    margin-left: 100px;
+}
+
 /*End skills section*/
 
 
 /* Projects Section */
 
 .projects_container {
+    margin-top: 25vh !important;
+    margin-bottom: 15vh !important;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 60vh;
+    border-style: double;
+    border-color: #ffffff;
     
     z-index: 1;
     width: 100%;
@@ -652,9 +691,9 @@ body{
     text-align: center;
 }
 
-#project_img {
-    height: 8%;
-    width: 80%;
+#stats_image{
+    height: 500px;
+    margin-left: 150px;
 }
 
 .projects_content u{
@@ -702,7 +741,6 @@ body{
     border-radius: 4px;
     color: rgb(255, 255, 255);
     margin-top: 2rem;
-    margin-left: 300px;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
