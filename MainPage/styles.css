@@ -61,7 +61,7 @@ body{
 
 .navbar {
     background-blend-mode: lighten;
-    border-bottom: 1px;
+    border-bottom: 1px solid #74757c;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -72,7 +72,7 @@ body{
     margin-top: 15px;
 }
 
-.navbar_container{
+.navbar_container {
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -82,8 +82,6 @@ body{
     margin: 0 auto;
     padding: 0 50px;
 }
-
-
 
 #navbar_logo {
     background-color: #000000;
@@ -98,21 +96,21 @@ body{
     cursor: pointer;
     text-decoration: none;
     font-size: 3rem;
-  }
+}
 
-.navbar_menu{
+.navbar_menu {
     display: flex;
     align-items: center;
     list-style: none;
     text-align: center;
 }
 
-.navbar_item{
+.navbar_item {
     height: 80px;
+    margin-bottom: 20px;
 }
 
-.navbar_links{
-    color: rgb(165, 160, 156);
+.navbar_links {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,14 +151,12 @@ body{
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 60vh;
     border-style: double;
     border-color: #ffffff;
-    
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0 50px;
+    padding: 50px 50px 50px 50px;
     overflow: hidden;
 }
 
@@ -515,14 +511,12 @@ body{
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 60vh;
     border-style: double;
     border-color: #ffffff;
-    
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0 50px;
+    padding: 50px 50px 50px 50px;
     overflow: hidden;
 }
 
@@ -651,22 +645,19 @@ body{
 /* Projects Section */
 
 .projects_container {
-    margin-top: 25vh !important;
+    margin-top: 20vh !important;
     margin-bottom: 15vh !important;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 60vh;
     border-style: double;
     border-color: #ffffff;
-    
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    height: 600px;
-    padding: 0 50px;
+    padding: 50px 50px 50px 50px;
     overflow: hidden;
 }
 
