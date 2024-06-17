@@ -800,17 +800,13 @@ body{
     
     .navbar_menu {
         flex-direction: column;
-        width: 100%;
         align-items: center;
     }
     
     .navbar_item {
-        margin: 10px 0;
+        margin: 0 !important;
     }
     
-    #navbar_logo {
-        margin-bottom: 20px;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -837,18 +833,21 @@ body{
     .skills_content h1,
     .projects_content h1 {
         font-size: 2rem;
+        text-align: center;
     }
 
     .main_content h2,
     .skills_content h2,
     .projects_content h2 {
         font-size: 1.5rem;
+        text-align: center;
     }
 
     .main_content p,
     .skills_content p,
     .projects_content p {
         font-size: 1rem;
+        text-align: center;
     }
 
     .main_btn,
@@ -856,7 +855,6 @@ body{
     .project_btn {
         font-size: 1rem;
         padding: 10px 20px;
-        
     }
 }
 
