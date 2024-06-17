@@ -158,7 +158,6 @@ body {
   }
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   #intro {
     font-size: 1.5rem;
