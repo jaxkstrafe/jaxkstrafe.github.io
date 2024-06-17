@@ -1,50 +1,47 @@
 body {
   margin: 0;
   background-color: #1e1c22;
+  font-family: 'VT323', monospace;
+  overflow: hidden;
 }
 
 .container {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
-.container .btn {
+#intro {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.center-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: transparent;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  font-weight: bold;
-  border: none;
   text-align: center;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
-
-#intro {
-  color: white;
-  font-family: "VT323", monospace;
-  text-align: center;
-}
-
-.center-center {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 [class*=btn-glitch-] {
   display: inline-block;
-  font-family: "VT323", monospace;
   border: 1px solid white;
   color: white;
   padding: 15px 13px;
@@ -53,6 +50,9 @@ body {
   white-space: nowrap;
   text-transform: uppercase;
   cursor: pointer;
+  position: relative;
+  background: transparent;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
 [class*=btn-glitch-] .text,
@@ -84,7 +84,7 @@ body {
   animation-iteration-count: infinite;
 }
 
-[class*=btn-glitch-]:hover :before, [class*=btn-glitch-]:focus :before {
+[class*=btn-glitch-]:hover::before, [class*=btn-glitch-]:focus::before {
   content: " ";
   width: 15px;
   border: 1px solid black;
@@ -94,7 +94,7 @@ body {
   transform: rotate(35deg);
 }
 
-[class*=btn-glitch-]:hover :after, [class*=btn-glitch-]:focus :after {
+[class*=btn-glitch-]:hover::after, [class*=btn-glitch-]:focus::after {
   animation-name: shrink;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
@@ -112,15 +112,13 @@ body {
   color: whitesmoke;
 }
 
-[class*=btn-glitch-]:active .text-decoration {
-  animation-name: none;
-}
-
+[class*=btn-glitch-]:active .text-decoration,
 [class*=btn-glitch-]:active .decoration {
   animation-name: none;
 }
 
-[class*=btn-glitch-]:active :before, [class*=btn-glitch-]:active :after {
+[class*=btn-glitch-]:active::before,
+[class*=btn-glitch-]:active::after {
   display: none;
 }
 
@@ -162,25 +160,20 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .container .btn {
-    font-size: 18px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  #intro {
+    font-size: 1.5rem;
   }
 
   [class*=btn-glitch-] {
     min-width: 200px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .container .btn {
-    font-size: 16px;
-    padding: 8px 16px;
+  #intro {
+    font-size: 1.2rem;
   }
 
   [class*=btn-glitch-] {
