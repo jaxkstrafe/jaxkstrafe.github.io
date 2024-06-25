@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <!-- Include necessary CSS if any -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/javafx"></script>
+    <script>
+        // Import necessary JavaFX classes and utilities
+        const { Application, Scene, Stage } = javafx;
+        const { FXCollections, ObservableList } = javafx.collections;
+        const { Pos } = javafx.geometry;
+        const { Button, ComboBox, Label } = javafx.scene.control;
+        const { BorderPane, HBox, Pane } = javafx.scene.layout;
+        const { Color, Image, Rectangle } = javafx.scene.paint;
+        const { ImageView } = javafx.scene.shape;
+        const { Font } = javafx.scene.text;
+
+        // Import your converted JavaScript classes
+        const WordList = require('./WordList');
+        const WelcomeScreen = require('./WelcomeScreen');
+        const GamePane = require('./GamePane');
+        const LetterButton = require('./LetterButton');
+
+        // Implement your application logic
+        class App extends Application {
+            start(primaryStage) {
+                const welcomeScene = WelcomeScreen.createWelcomeScene(primaryStage);
+
+                primaryStage.setScene(welcomeScene);
+                primaryStage.setTitle('Hangman Game - Welcome');
+                primaryStage.show();
+            }
+
+            static main(args) {
+                this.launch(args);
+            }
+        }
+
+        App.main([]);
+    </script>
+</body>
+</html>

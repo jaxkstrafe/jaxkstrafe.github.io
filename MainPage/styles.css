@@ -50,9 +50,7 @@ a {
 
 /*End Font Stuff*/
 
-ul{
-    list-style-type: none;
-}
+
 
 body{
     background-color: #141414;
@@ -94,7 +92,6 @@ body{
     display: flex;
     align-items: center;
     cursor: pointer;
-    text-decoration: none;
     font-size: 3rem;
 }
 
@@ -108,9 +105,15 @@ body{
 .navbar_item {
     height: 80px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    height: 100%;
 }
 
 .navbar_links {
+    color: #f9f9f9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,12 +123,12 @@ body{
 }
 
 .navbar_links:hover {
-    color: rgb(122, 18, 207);
-    transition: all 0.9s ease;
-    text-decoration: underline;
+    color: #8c00ff; /* Hover link color */
+    text-shadow: 0 0 10px rgba(157, 0, 255, 0.8); /* Add shadow effect on hover */
+    text-decoration: underline; /* Underline on hover */
     font-size: xx-large;
+    transition: all 0.9s ease;
 }
-
 
 
 
