@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
     font-family: "VT323", monospace;
 }
@@ -104,12 +103,6 @@ body{
 
 .navbar_item {
     height: 80px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1rem;
-    height: 100%;
 }
 
 .navbar_links {
@@ -120,12 +113,13 @@ body{
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+    text-decoration: underline; 
 }
 
 .navbar_links:hover {
-    color: #8c00ff; /* Hover link color */
-    text-shadow: 0 0 10px rgba(157, 0, 255, 0.8); /* Add shadow effect on hover */
-    text-decoration: underline; /* Underline on hover */
+    color: #8c00ff; 
+    text-shadow: 0 0 10px rgba(157, 0, 255, 0.8); 
+    text-decoration: underline; 
     font-size: xx-large;
     transition: all 0.9s ease;
 }
@@ -272,7 +266,7 @@ body{
     line-height: 1.5;
 }
 
-.main_content ul, li {
+.main_content ul li {
     background-color: #05014a;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     margin-top: 1rem;
@@ -569,7 +563,7 @@ body{
     text-align: left;
 }
 
-.skills_content ul, li {
+.skills_content ul li {
     background-color: #05014a;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     margin-top: 1rem;
@@ -732,7 +726,7 @@ body{
 
 }
 
-.projects_content li, ul {
+.projects_content li ul {
     background-color: #05014a;
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     margin-top: 1rem;

@@ -1,4 +1,4 @@
-// Define an array of blog posts
+
 const blogPosts = [
     {
         title: 'First Blog Post',
@@ -9,8 +9,16 @@ const blogPosts = [
         title: 'Second Blog Post',
         content: '2nd Blog post example',
         link: 'post1.html'
+    },
+    {
+        title: 'Third Blog Post',
+        content: `
+            3rd Blog post example, this is the third example of a blog
+        `,
+        link: 'post1.html'
     }
 ];
+
 
 function getSnippet(content, sentenceCount = 2) {
     const sentences = content.split('. ');
