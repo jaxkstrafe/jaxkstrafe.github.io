@@ -1,8 +1,8 @@
 
 const blogPosts = [
     {
-        title: 'First Blog Post',
-        content: '1st Blog Post example',
+        title: 'How I Gained Millions of Views and Likes On TikTok',
+        content: 'Although I only started the account this year and really only started posting seriously in April. Since then I have garnered millions of views and likes using a niche style of content creation. Consistency is one of the most important things I believe for growing any social media account. Trust me I’ve had videos perform very poorly, I’ve had videos one day get hundreds of thousands of views only to watch the next few struggle to reach five thousand. Since April I have posted almost every day which I believe is what helped grow my account at such a rapid rate. Keeping a niche style of content is something I can also attribute to my rapid growth on the platform. Niching down your content to one particular subject, idea, or franchise(like I did) will only benefit you in the algorithm and with retaining followers. Truthfully I do not think it is that difficult to garner a following on TikTok as long as you make decent content consistently. However, if you try one idea and after two weeks or so you have not seen any growth switch it up and try something new.',
         link: 'post1.html'
     },
     {

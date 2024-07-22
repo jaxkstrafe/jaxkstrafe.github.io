@@ -82,6 +82,23 @@ body {
     padding: 2rem 50px;
 }
 
+.post_container {
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.post_container h2{
+    color: #ffffff !important; 
+    text-shadow: 0 0 10px rgba(182, 182, 182, 0.8) !important;  
+    text-align: center;
+}
+
+.post_container p{
+    text-align: center;
+}
+
 .blog_post_container {
     padding: 2rem 50px;
 }
