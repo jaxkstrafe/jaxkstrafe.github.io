@@ -442,10 +442,10 @@ body{
 }
 
 .fadeInTop {
-    -webkit-animation: fadeInTop 1.2s both;
-    -moz-animation: fadeInTop 1.2s both;
-    -o-animation: fadeInTop 1.2s both;
-    animation: fadeInTop 1.2s both; 
+    -webkit-animation: fadeInTop 3.2s both;
+    -moz-animation: fadeInTop 3.2s both;
+    -o-animation: fadeInTop 3.2s both;
+    animation: fadeInTop 3.2s both; 
 }
 
 @keyframes fadeInTop {
