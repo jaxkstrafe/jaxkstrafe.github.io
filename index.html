@@ -2,25 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="landingstyles.css">
-    <link rel="icon" href="/jaxkstrafe.github.io/favicon/favicon-32x32.png">
+    <title>jxckstrafe.xyz</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src = "/MainPage/app.js"></script>
+    <link rel="icon" href="/favicon/favicon-32x32.png">
+    <script defer src = "app.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <video autoplay muted loop id="myVideo" class="video">
-            <source src="landingpage.mp4" type="video/mp4">
-        </video>
-            <span id="intro"></span>
-        <div class="center-center">
-            <a class="btn-glitch-fill" href="MainPage/index.html">
-                <span class="text">//Welcome To My Website//</span><span class="text-decoration">_</span><span class="decoration">&rArr;</span>
-            </a>
+
+<!--HEADER SECTION-->
+<header class="navbar">
+    <div class="navbar_container">
+        <a href="#" id="navbar_logo">Home Page</a>
+        <ul class="navbar_menu">
+            <li class="navbar_item"><a href="/" class="navbar_links">Home</a></li>
+            <li class="navbar_item"><a href="/Blog/index.html" class="navbar_links">Blogs</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Welcome Section-->
+<section>
+    <div class="welcome_container">
+        <div class="welcome_content">
+            <div class="logo hidden">
+                <h1>//Jack Dalton</h1>
+            </div>
+            <div class="logo hidden">
+                <h2>Computer Science Student, Front End Developer, and Content Creator</h2>
+            </div>
+            <div class="logo hidden">
+                <p>Welcome to my personal website! Here you'll find information about myself, some of my skills, and some info about my interests. </p>
+            </div>
         </div>
-    <div>
+    </div>
+</section>
+
+
+
+<!--ABOUT ME SECTION-->
+<section id="about">
+    <div class="main_container">
+        <div class="main_content">
+            <div class = "logo hidden">
+                <h1>//About Me</h1>
+            </div>
+            <div class = "logo hidden"> 
+                <ul>
+                    <p>I am a senior pursuing a Computer Science degree
+                        at Stephen F. Austin State University.</p>
+                    <p>I'm passionate about web development and creating sites that users find intuitive, visually appealing, and beneficial.</p>      
+                    <p>My goal is to combine my technical skills and passion for design to develop impactful projects that make a positive difference</p>  
+                </ul>
+            </div>
+            <div class = "logo hidden">
+                <button class="main_btn">
+                    <a href="mailto:daljac133@gmail.com" target="_blank">Email Me Here!</a>
+                </button>
+            </div>
+        </div>
+        <div>
+            <div class = "logo hidden">
+                <div class="main_img--container" id="aboutMeImg">
+                    <img src="/images/progamming.svg" alt="mainpic" id="main_img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--SKILLS SECTION-->
+<section>
+    <div class="skills_container">
+        <div class="skills_content">
+            <div class = "logo hidden">
+                <h1>//Skills</h1>
+            </div>
+            <div class = "logo hidden"> 
+                <ul>
+                    <p>Knowledgeable and Proficient in Java, C#, C++, SQL and PlantUML</p>
+                    <p>Knowledgeable and Proficient in Web Design(HTML, CSS, JavaScript)</p>
+                    <p>Proficient in Vim, VSCode, Visual Studio and Android Studio</p>
+                </ul>
+                <!--TOOLS I USE SECTION WITH LOGOS-->
+            </div>
+            <div class = "logo hidden">
+                <button class="skills_btn">
+                    <a href="https://github.com/jaxkstrafe" target="_blank">Check Out my Github!</a>
+                </button>
+            </div>
+        </div>
+        <div class = "logo hidden">
+            <div class="main_img--container" id="skillsImg">
+                <div class = "slideImage">
+                    <img src="/images/website.svg" alt="mainpic" id="skills_img">
+                </div>
+            </div>
+        </div>
+<!--         
+        <div class="images_container">
+            <div class = "logo hidden"> 
+                <ul>
+                    <li><img src="/images/vimLogo.png" alt="mainpic" id=""></li>
+                    <li><img src="/images/vscodeLogo.png" alt="mainpic" id=""></li>
+                    <li><img src="/images/sublimeLogo.png" alt="mainpic" id=""></li>
+                </ul>
+
+            </div>
+        </div>
+        -->
+    </div>
+</section>
+
+<!--Social Media-->
+<section>
+    <div class = "projects_container">
+        <div class = "projects_content">
+            <div class = "logo hidden"> 
+                <h1>//My Social Media Experience</h1>
+            </div>
+            <div class = "logo hidden"> 
+                <ul>
+                    <p>Since the start of 2024 I've been able to create and build a successful content community from nothing</p>
+                    <p>I've achieved milestones, garnering millions of views and millions of engagements in just a few short months</p>  
+                    <p>Connect with me on TikTok to see more about this!</p>             
+                </ul>
+            </div>
+            <div class = "logo hidden">
+                <button class="project_btn">
+                    <a href="https://www.tiktok.com/@jaxkstrafe" target="_blank">Let's Connect!</a>
+                </button>
+            </div>
+        </div>
+        <div class = "logo hidden">
+            <div class = "main_img--container" id = "skillsImg">
+                <div class = "slideImage">
+                    <img src="/images/stats.jpg" alt="mainpic" id="stats_image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="buttonScript.js"></script>
 </body>
 </html>
