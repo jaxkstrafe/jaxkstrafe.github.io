@@ -150,4 +150,5 @@ body {
 .post_date {
     font-style: italic;
     margin-top: 10px;
+    font-size: 1rem !important;
 }
