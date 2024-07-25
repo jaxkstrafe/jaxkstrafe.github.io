@@ -2,22 +2,24 @@
 const blogPosts = [
     {
         title: 'How I Gained Millions of Views and Likes On TikTok',
-        content: 'Although I only started the account this year and really only started posting seriously in April. Since then I have garnered millions of views and likes using a niche style of content creation. Consistency is one of the most important things I believe for growing any social media account. Trust me I’ve had videos perform very poorly, I’ve had videos one day get hundreds of thousands of views only to watch the next few struggle to reach five thousand. Since April I have posted almost every day which I believe is what helped grow my account at such a rapid rate. Keeping a niche style of content is something I can also attribute to my rapid growth on the platform. Niching down your content to one particular subject, idea, or franchise(like I did) will only benefit you in the algorithm and with retaining followers. Truthfully I do not think it is that difficult to garner a following on TikTok as long as you make decent content consistently. However, if you try one idea and after two weeks or so you have not seen any growth switch it up and try something new.',
-        link: 'post1.html'
+        content: 'I only started my account this year and began posting seriously in April. Since then, I\'ve garnered millions of views and likes by using a niche style of content creation. Consistency, in my opinion, is crucial for growing any social media account. I\'ve had videos perform poorly, but I\'ve also had videos that received hundreds of thousands of views one day, only to see the next few struggle to reach five thousand. Since April, I\'ve posted almost every day, which I believe has helped my account grow rapidly. \n\nMy style of content is easy to make; I spend at most an hour a day working on it. This makes it easy to keep up with daily posting. There are honestly no excuses not to post consistently. \n\nThe second key to my rapid growth is maintaining a niche style of content. Focusing your content on a particular subject, idea, or franchise (like I did) benefits you in the algorithm and helps retain followers. I post Star Wars content, which is a huge franchise with millions of fans. If I were to post Star Wars one day, Harry Potter the next, and then Marvel or DC after that, I wouldn\'t retain followers and returning viewers as well as I do now. It would be difficult to grow a fanbase. \n\nIn truth, I don\'t think it\'s that difficult to garner a following on TikTok as long as you make decent content consistently. However, if you try one idea and don\'t see any growth after two weeks or so, switch it up and try something new.',
+        link: 'post1.html',
+        date: '2024-07-23'
     // },
     // {
     //     title: 'Second Blog Post',
     //     content: '2nd Blog post example',
-    //     link: 'post1.html'
+    //     link: 'post2.html',
+    //     date: '2024-07-24'
     // },
     // {
     //     title: 'Third Blog Post',
-    //     content: `
-    //         3rd Blog post example, this is the third example of a blog
-    //     `,
-    //     link: 'post1.html'
+    //     content: '3rd Blog post example, this is the third example of a blog',
+    //     link: 'post3.html',
+    //     date: '2024-07-23'
     }
 ];
+
 
 
 function getSnippet(content, sentenceCount = 2) {
@@ -45,9 +47,15 @@ function displayBlogPosts() {
         postContent.textContent = getSnippet(post.content);
         postBlog.appendChild(postContent);
 
+        const postDate = document.createElement('p');
+        postDate.className = 'post_date';
+        postDate.textContent = `Published on: ${post.date}`;
+        postBlog.appendChild(postDate);
+
         blogPostsContainer.appendChild(postBlog);
     });
 }
+
 
 function displaySingleBlogPost() {
     const blogPostContainer = document.getElementById('blog_post');
@@ -65,10 +73,16 @@ function displaySingleBlogPost() {
         const postContent = document.createElement('p');
         postContent.textContent = post.content;
         blogPostContainer.appendChild(postContent);
+
+        const postDate = document.createElement('p');
+        postDate.className = 'post_date';
+        postDate.textContent = `Published on: ${post.date}`;
+        blogPostContainer.appendChild(postDate);
     } else {
         blogPostContainer.textContent = 'Blog post not found.';
     }
 }
+
 
 
 window.onload = function() {

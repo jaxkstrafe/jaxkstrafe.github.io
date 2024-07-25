@@ -146,3 +146,8 @@ body {
     text-shadow: 0 0 10px rgba(157, 0, 255, 0.8); 
     text-decoration: underline; 
 }
+
+.post_date {
+    font-style: italic;
+    margin-top: 10px;
+}
