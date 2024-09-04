@@ -83,20 +83,21 @@ body {
 }
 
 .post_container {
-    width: 1500px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
 }
 
 .post_container h2{
-    color: #ffffff !important; 
-    text-shadow: 0 0 10px rgba(182, 182, 182, 0.8) !important;  
+    color: #8c00ff !important; 
+    text-shadow: 0 0 10px rgba(157, 0, 255, 0.8); 
     text-align: center;
+    text-decoration: underline;
 }
 
 .post_container p{
-    text-align: center;
+    text-indent: 15px;
 }
 
 .blog_post_container {
