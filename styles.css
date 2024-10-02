@@ -850,6 +850,60 @@ body{
 /* End Projects Section */
 
 
+
+/* Footer Styles */
+footer {
+    background-color: #222222;
+    padding: 30px 0;
+    color: #ffffff;
+    text-align: center;
+    border-top: 1px solid #74757c;
+    margin-top: 30px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer_section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer_center {
+    justify-content: center;
+}
+
+.footer_left,
+.footer_right {
+    justify-content: space-between;
+}
+
+.footer_section a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer_section a:hover {
+    color: #8c00ff;
+    text-decoration: underline;
+}
+
+.footer_copyright {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
 /* Mobile stuff */
 
 @media screen and (max-width: 768px) {
@@ -942,6 +996,24 @@ body{
         margin-top: 10vh !important;
         margin-bottom: 10vh !important;
         padding: 20px 20px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer_container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer_left,
+    .footer_center,
+    .footer_right {
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .footer_section a {
+        font-size: 1rem;
     }
 }
 
