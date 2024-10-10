@@ -184,9 +184,10 @@ body{
     margin: 0; 
 }
 
+
+
 /* Engagement Rate Calculator Section */
 #engagement_calculator {
-    background-color: #202020;
     padding: 50px;
     margin: 50px auto;
     border-style: double;
